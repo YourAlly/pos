@@ -147,7 +147,7 @@ $items = $query->fetchAll(PDO::FETCH_ASSOC);
                         </td>
                     </tr>
                 </table>
-                <form action="products.html?product_id=<?php echo $product['id']; ?>">
+                <form action="products.php?product_id=<?php echo $product['id']; ?>">
                     <button type="submit" name="register" class="btnOA">Order Again</button>
                 </form>
 

@@ -105,12 +105,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="container">
             <div class="navbar">
                 <div class="logo">
-                    <a href="index.html"><img src="https://via.placeholder.com/300" width="125px"></a>
+                    <a href="index.php"><img src="https://via.placeholder.com/300" width="125px"></a>
                 </div>
                 <nav>
                     <ul id="MenuItems">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="Products.html">Products</a></li>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="Products.php">Products</a></li>
                         
                         <div class="dropdown">
                             <li><a href="" class="dropbtn">Account</a></li>

@@ -81,7 +81,7 @@ $transactions = $query->fetchAll(PDO::FETCH_ASSOC);
             <h1>Purchase History</h1>
         </div>
         <div class="history-container">
-            <form action="orderdetails.html">
+            <form action="orderdetails.php">
                 <table class="oldorder">
                     <tr>
                         <th>ID</th>

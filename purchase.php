@@ -140,7 +140,6 @@ if (!isset($_SESSION['cart'])) {
                 <p><?php echo $error ?></p>
             </div>
     <?php }
-        unset($_SESSION['errors']);
     } ?>
 
     <div class="Purchasemain-container">

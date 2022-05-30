@@ -37,7 +37,7 @@ $available_products = $query->fetchAll(PDO::FETCH_ASSOC);
                             <div class="dropdown">
                                 <li><a class="dropbtn">Account</a></li>
                                 <div class="dropdown-content">
-                                    <a href="Profile.html">Profile</a>
+                                    <a href="profile_page.php">Profile</a>
                                     <a href="purchase_history.php">Purchase History</a>
                                     <a href="./logout.php">Logout</a>
                                 </div>
