@@ -1,0 +1,1199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #F5F5F5;
+}
+.navbar{
+    
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+    
+}
+/* For search bar */
+form.search input[type=text] {
+    padding: 10px;
+    margin-top: 1px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 93%;
+    background: #f1f1f1;
+  }
+  
+  /* Style of the submit button */
+  form.search button {
+    float: left;
+    width: 7%;
+    height: 32px;
+    padding: 5px;
+    background: black;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+  
+  form.search button:hover {
+    background: #0b7dda;
+  }
+  
+
+  form.search::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    padding: 12px;
+}
+nav ul li:hover{background-color: #3e8e41;}
+a{
+    text-decoration: none;
+    color: black;
+}
+p{
+    color: 555;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn{
+    display: inline-block;
+    background: black;
+    color: #fff;
+    padding: 8px 30px;
+    margin:  30px 0;
+    border-radius: 30px;
+    transition: background 0.2s;
+}
+.btn:hover{
+    background: #563434;
+}
+.header{
+    
+    background: radial-gradient(#fff,#C5DCF7);
+}
+.header .row{
+    margin-top: 70px;
+}
+
+/*categories, ung first three cats*/
+
+.categories{
+    margin: 70px 0;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width: 100%;
+}
+
+/*Featured and latest, ung most sold and new arrival cats*/
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 20px;
+    transition: transfom 0.5s;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+.col-4:hover{
+    transform: translateY(-5px);
+}
+.col-4 img{
+    width: 100%;
+}
+
+/*Eto ung title|| featured products, latest products*/
+
+
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after{
+    content: '';
+    background: black;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*Promo, ung persian cat*/
+
+.promo{
+    background: radial-gradient(#fff,#C5DCF7);
+    margin-top: 80px;
+    padding: 30px 0
+
+}
+
+/*cart*/
+.table-container{
+    background: white;
+    width: 1050px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 10px 10px 60px 10px;
+    margin: 10px 0 30px 0;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.table2-container{
+    background: white;
+    width: 1010px;
+    height: 200px;
+    position: relative;
+    text-align: center;
+    padding: 10px 0px 60px 0px;
+    margin: 10px 0 30px 0;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.cart-page{
+    margin: 80px auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: white;
+    background: black;
+    font-weight: normal;
+}
+
+td{
+    padding: 10px 5px;
+}
+ td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: Red;
+    font-size: 12px;
+}
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+.btnP{
+    position: absolute;
+    margin-left: 50%;
+    background: black;
+    color: #fff;
+    padding: 8px 30px;
+    border-radius: 30px;
+    transition: background 0.2s;
+}
+
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table{
+    border-top: 3px solid black;
+    width: 100%;
+    max-width: 460px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+/*Footer*/
+
+.footer{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: black;
+    color: white;
+    font-size: 14px;
+    padding: 20px 0 10px;
+}
+.footer p{
+    color:white;
+}
+.footer-col-3,.footer-col-2{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-3{
+    flex-basis: 35%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: right;
+}
+
+.footer-col-2 ul{
+    
+    list-style-type: none;
+    font-size: 12px;
+
+}
+/*Product menu specific changes*/
+/*Product title*/
+.row-2{
+    justify-content: space-between;
+    margin:  100px auto 50px;
+}
+select{
+    border: 1px solid black;
+    padding: 5px;
+}
+select:focus{
+    outline: none;
+}
+.page-btn span:hover{
+    background: black;
+    color:white;
+}
+/*navigation bar collapse*/
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+}
+.page-btn{
+    margin: 10px auto 50px;
+}
+.page-btn span{
+    display: inline-block;
+    border: 1px solid black;
+    margin-left: 10px;
+    width: 100px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    cursor: pointer;
+}
+
+/*Product details,  before adding to cart*/
+.small-img-row{
+    transition: transfom 0.5s;
+}
+.small-img-col{
+    transform: translateY(-5px);
+}
+.single-product{
+    margin-top: 80px;
+}
+.single-product .col-2 img{
+    padding: 0;
+}
+.single-product .col-2{
+    padding: 20px;
+}
+.single-product h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid black;
+}
+input:focus{
+    outline: none;
+}
+
+
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+
+}
+/*Login*/
+.account-page{
+    padding: 50px 0;
+    background: radial-gradient(#fff,#C5DCF7);
+}
+.form-container{
+    background: white;
+    width: 300px;
+    height: 600px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0 60px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    overflow: hidden;
+    
+}
+
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: grey;
+    cursor: pointer;
+    width: 130px;
+    display: inline-block;
+}
+.form-container select{
+    width: 100%;
+}
+
+.form-btn{
+    display: inline-block;
+
+}
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 120px;
+    transition: transform 1s;
+}
+
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1 px solid white;
+}
+form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+
+}
+form select{
+    font-weight: bold;
+    padding: 0 10px;
+    color: grey;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+}
+form .btn:focus{
+    outline: none;
+}
+#LoginForm{
+    left: -300px;
+}
+#RegForm{
+    left: 0;
+    margin-bottom: 50px;
+}
+form a{
+    font-size: 12px;
+}
+#Indicator{
+    width: 100px;
+    border: none;
+    background: black;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(150px);
+    transition: transform 1s;
+}
+
+/*message and error*/
+.error-portion p{
+    color: red;
+    background-color: pink;
+    text-align: center;
+}
+.message-portion p{
+    color: green;
+    background-color: lightgreen;
+    text-align: center;
+   
+}
+
+/*Profile page*/
+.main-container{
+    padding: 80px 0;
+    height: 800px;
+}
+.profile-container p{
+    text-align: center;
+    padding: 5px 5px 5px 40px;
+    padding-bottom: 2%;
+    
+}
+.profile-container h1{
+    font-size: 20px;
+    margin-left: 40px;
+    text-align: center;
+}
+.profile-container h4{
+    font-size: 15px;
+    margin-left: 40px;
+    text-align: center;
+    font-weight: lighter;
+    margin-bottom: 23px;
+    
+}
+.sep input{
+    width: 30%;
+    margin-left: 1%;
+}
+.radio input{
+    position: left;
+    width: 5%;
+}
+.profile-container a{
+    color: red;
+
+}
+.profile-container{
+    background: white;
+    width: 900px;
+    height: 590px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0 60px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.profilepic-container img{
+    width: 10%;
+    height: 7%;
+    position: center;
+    border-radius: 60%;
+    margin-left: 40px;
+}
+.profilepic-container p{
+    font-size: 17px;
+}
+#address{
+    width: 60%;
+    margin-left: 1%;
+}
+/*delete*/
+.confirmation-container{
+    background: white;
+    width: auto;
+    height: 230px;
+    margin: 20px 380px;
+    padding: auto;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+}
+.confirmation-container h1{
+    background: orangered;
+    text-align: center;
+    font-weight: normal;
+    font-size: 25px;
+}
+.confirmation-container p{
+    padding: 50px;
+    margin-left: 33%;
+    
+}
+.confirmation-container .Confirm{
+    position: center;
+    background: black;
+    border: none;
+    color: white;
+    width: 10%;
+    padding: 12px 0px;
+    margin:  0px 10px 0 820px;
+    transition: background 0.2s;
+}
+.confirmation-container .cancel{
+    position: center;
+    background: black;
+    border: none;
+    color: white;
+    width: 10%;
+    padding: 12px 0px;
+    margin:  0px 10px 20px 10px;
+    transition: background 0.2s;
+}
+/*history*/
+.history-container{
+    background: white;
+    width: auto;
+    height: 340px;
+    margin: 20px 380px;
+    padding: auto;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+}
+.history-container th{
+text-align: center;
+}
+.history-container td{
+    border: 1px solid gray;
+    text-align: center;
+}
+.history-container .btnOD{
+    position: center;
+    background: orangered;
+    border: none;
+    color: white;
+    width: 60%;
+    padding: 12px 0px;
+    margin:  0px 10px 0 10px;
+    transition: background 0.2s;
+}
+.history-container .btnOD:focus{
+    outline: none;
+}
+/*Order details*/
+.label-container{
+    background: white;
+    width: auto;
+    height: 70px;
+    margin: 20px 380px;
+    padding: auto;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+}
+.ordered-container{
+    background: white;
+    width: auto;
+    height: 290px;
+    margin: 20px 380px;
+    padding: auto;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+}
+.label-container h1{
+    text-align: center;
+    font-size: 22px;
+    font-weight: normal;
+    padding: 18px 0;
+    color: orangered;
+    border: 2px solid rgba(0,0,0,0.1);
+}
+
+#ord-total{
+    padding-top: 0px;
+    color: grey;
+}
+.ordered-container .btnOA{
+    position: right;
+    background: black;
+    color: #fff;
+    padding: 12px 30px;
+    margin:  0px 0 0 980px;
+    border: none;
+    transition: background 0.2s;
+}
+.ordered-container .btnOA:focus{
+    outline: none;
+}
+
+/*
+.ordered-container .btnOD{
+    position: right;
+    background: white;
+    color: black;
+    width: 12%;
+    padding: 12px 0px;
+    margin:  0px 60px 0 0px;
+    transition: background 0.2s;
+}*/
+.ordered-container .btnOD:focus{
+    outline: none;
+}
+.sepa th{
+    background: red;
+}
+
+/*Purchase*/
+.Address-container{
+    background: white;
+    width: auto;
+    height: 130px;
+    margin: 20px 380px;
+    padding: auto;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+}
+.Address-container h1{
+    font-size: 20px;
+    margin: 20px 20px 10px 20px;
+    padding-top: 15px;
+    font-weight: lighter;
+    color: red;
+}
+.address td{
+    padding: 10px 30px;
+  
+}
+.address #defadd{
+    color: grey;
+}
+
+.order-container{
+    background: white;
+    width: auto;
+    height: 370px;
+    margin: 20px 380px;
+    padding: auto;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+}
+.ordered-container th{
+    color: white;
+    background: black;
+    padding: 10px 50px 10px 50px;
+    margin-bottom: 50px;
+}
+.ordered-container td{
+    padding: 10px 50px 10px 50px;
+}
+.ordered-container #rate{
+    color: grey;
+}
+.order #var{
+    color: grey;
+}
+.order #HEY{
+    padding-left: 50px;
+}
+.order #prodname{
+    padding-left: 60px;
+}
+#msgtoseller input{
+    margin-top: 50px;
+    width: 200px;
+}
+#msgtoseller p{
+    font-size: 13px;
+}
+#deliv{
+    font-size: 12px;
+}
+#separator{
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+#ord-tot{
+    margin-top: 20px;
+    font-weight: bold;
+    color: grey;
+}
+#totalprice{
+    color: grey;
+
+}
+
+
+.purchase-container{
+    background: white;
+    width: auto;
+    height: 430px;
+    margin: 20px 380px;
+    padding: auto;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+}
+.purchase-container h1{
+    font-size: 20px;
+    padding: 30px;
+    border-bottom: 1px solid grey;
+}
+.purchase-container select{
+    margin-left: 20px;
+}
+#merch-tot{
+    margin-left: 85%;
+}
+.purchase-container .btn:focus{
+    outline: none;
+}
+
+
+/*onhover ng account tab*/
+
+.dropbtn {
+    background-color: transparent;
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 112px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 30px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  
+/*For screensize changes*/
+@media only screen and (max-width: 1900px){
+    .ordered-container .btnOA{
+        position: right;
+        background: black;
+        color: #fff;
+        padding: auto;
+        margin:  auto;
+        border: none;
+        transition: background 0.2s;
+    }
+    .confirmation-container{
+        padding: auto;
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin: 20px;
+    }
+    .table-container{
+        padding: auto;
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin: 20px;
+    }
+    .table2-container{
+        padding: auto;
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin: 20px;
+    }
+    
+}
+@media only screen and (max-width: 1469px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: transparent;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 1px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: black;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    .row{
+        text-align: center;
+    }
+    .Address-container {
+        padding: auto;
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+    .Address-container #address{
+        padding: 20px 30px;
+        text-align: center;
+        width: auto;
+    }
+    .order-container{
+        padding: auto;
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+    .purchase-container{
+        padding: auto;
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin: 20px;
+    }
+    .label-container{
+        padding: auto;
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin: 20px;
+    }
+    .history-container{
+        padding: auto;
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin: 20px;
+    }
+    .confirmation-container{
+        padding: auto;
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin: 20px;
+    }
+    .ordered-container{
+        padding: auto;
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+    .ordered-container .btnOA{
+        padding: auto;
+        text-align: right;
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+    .table-container{
+        padding: auto;
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin: 20px;
+    }
+    .table2-container{
+        padding: auto;
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin: 20px;
+    }
+}
+@media only screen and (max-width: 905px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: transparent;
+        width: 100%;
+        height: 1000px;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 1px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: black;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+    .row{
+        text-align: center;
+    }
+    .page-btn{
+        text-align: center;
+        
+    }
+    .profile-container{
+        width: auto;
+    }
+    .main-container{
+        padding: 20px 30px;
+        text-align: center;
+        width: auto;
+    }
+    .Address-container {
+        padding: auto;
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+    .Address-container #address{
+        padding: 20px 30px;
+        text-align: center;
+        width: auto;
+    }
+    .order-container{
+        padding: auto;
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+    .purchase-container{
+        padding: auto;
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+    .label-container{
+        padding: auto;
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+    .history-container{
+        padding: auto;
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+    .confirmation-container{
+        padding: auto;
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+    .ordered-container td{
+        padding: auto;
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+    .ordered-container .btnOA{
+       position: right;
+        padding: auto;
+        text-align: right;
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+    .table-container{
+        padding: auto;
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin: 20px;
+    }
+    .table2-container{
+        padding: auto;
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin: 20px;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 650px){
+    .row{
+        text-align: center;
+    }
+    .col-2,.col-3,.col-4{
+        flex-basis: 100%;
+        
+    }
+    .row-2{
+        text-align: center;
+    }
+    .page-btn{
+        text-align: center;
+        
+    }
+    .single-product .row{
+        text-align: left;
+    }
+    .single-product .col-2{
+        padding: 20px 0;
+    }
+    .profile-container{
+        width: auto;
+    }
+    .main-container{
+        padding: 20px 30px;
+        text-align: center;
+        width: auto;
+    }
+    .Address-container {
+        padding: auto;
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+    .Address-container #address{
+        padding: 20px 30px;
+        text-align: center;
+        width: auto;
+    }
+    .order-container{
+        padding: auto;
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+    .purchase-container{
+        padding: auto;
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+    .label-container{
+        padding: auto;
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+    .history-container{
+        padding: auto;
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+    .confirmation-container{
+        padding: auto;
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+    .ordered-container {
+        padding: auto;
+        text-align: auto;
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+    .ordered-container td{
+        padding: auto;
+        text-align: auto;
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+    .ordered-container .btnOA{
+        padding: auto;
+        text-align: right;
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+    .table-container{
+        padding: auto;
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin: 20px;
+    }
+    .table2-container{
+        padding: auto;
+        box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+        text-align: center;
+        width: auto;
+        height: auto;
+        margin: 20px;
+    }
+}

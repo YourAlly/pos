@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.header{
+    background: radial-gradient(#fff,#C5DCF7);
+    padding: 5% 5% 2% 5%;
+    
+    
+    
+}
+
+.container{
+    margin: auto;
+}
+
+.col-2{
+    flex-basis: 50%;
+}
+
+.alert{
+    background-color: salmon;
+    color: darkred;
+    padding: 1.5%;
+    border-radius: 15px;
+    margin: 1% 5%;
+}
+
+.myform{
+    margin: 2% 5%;
+}
+
+.forinput{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 3px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.forselect{
+  width: auto;
+  padding: 12px 20px;
+  margin: 8px 10px;
+  display: inline-block;
+  border: 3px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.forinputsubmit{
+  width: auto;
+  background-color: deepskyblue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.forinputsubmit:hover{
+
+    background-color: dodgerblue;
+
+}
+
+/* for tables */
+table, td, th {  
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 15px;
+  }
+
+  .arrangetable{
+    margin: 1% 3%;
+  }
+
+  .edit{
+    width: auto;
+    background-color:dodgerblue;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bolder;
+  }
+
+  .edit:hover{
+      background-color: blue;
+  }
+
+  .delete{
+    width: auto;
+    background-color:tomato;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: bolder;
+  }
+
+  .delete:hover{
+      background-color: red;
+  }
+
+  .product-img {
+    width: 50px;
+    height: auto;
+}
+
+.product-image-view{
+  width: 250px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 3px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.update{
+    width: auto;
+    background-color:lightseagreen;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bolder;
+  }
+
+  .update:hover{
+      background-color: green;
+  }
+
+  .shit{
+    color: lightseagreen;
+  }
