@@ -1,0 +1,70 @@
+BEGIN TRANSACTION;
+
+-- DROPS CURRENT TABLES
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS products;
+DROP TABLE IF EXISTS profiles;
+DROP TABLE IF EXISTS transactions;
+DROP TABLE IF EXISTS transactions_products;
+
+CREATE TABLE products (
+    id INTEGER PRIMARY KEY NOT NULL,
+    name TEXT NOT NULL,
+    img_url TEXT DEFAULT NULL,
+    description text DEFAULT NULL,
+    category TEXT NOT NULL,
+    price INTEGER NOT NULL,
+    quantity INTEGER NOT NULL,
+    recommended TINYINT NOT NULL,
+    date_added TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE profiles (
+    id INTEGER PRIMARY KEY NOT NULL,
+    user_id INTEGER NOT NULL,
+    img_url TEXT DEFAULT NULL,
+    first_name TEXT NOT NULL,
+    last_name TEXT NOT NULL,
+    address text DEFAULT NULL,
+    s_question TINYINT NOT NULL,
+    s_answer TEXT NOT NULL,
+    
+    FOREIGN KEY (user_id)
+        REFERENCES users (id)
+);
+
+CREATE TABLE transactions (
+    id INTEGER PRIMARY KEY NOT NULL,
+    user_id INTEGER NOT NULL,
+    transact_date datetime DEFAULT CURRENT_TIMESTAMP,
+    delivery_mode TEXT NOT NULL,
+
+    FOREIGN KEY (user_id)
+        REFERENCES users (id)
+);
+
+CREATE TABLE transactions_products (
+    id INTEGER PRIMARY KEY NOT NULL,
+    transact_id INTEGER NOT NULL,
+    product_id INTEGER NOT NULL,
+    amount INTEGER NOT NULL,
+
+    
+    FOREIGN KEY (transact_id)
+        REFERENCES transactions (id),
+
+    FOREIGN KEY (product_id)
+        REFERENCES products (id)
+);
+
+CREATE TABLE users (
+    id INTEGER PRIMARY KEY NOT NULL,
+    username TEXT NOT NULL,
+    password TEXT NOT NULL,
+    is_admin TINYINT NOT NULL DEFAULT 0,
+    registration_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+COMMIT;
+
+PRAGMA foreign_keys = ON;
